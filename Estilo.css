@@ -7,37 +7,48 @@
     --radio-grande: 2em;
     --fuente: 'Arial', sans-serif;
   }
-  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   body {
     margin: 0;
-    padding: 0;
+    padding: 1em;
     font-family: var(--fuente);
     background-color: var(--yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: grid;
+   place-items: center;
     height: 100vh;
   }
-  
+main{
+    position: fixed;
+    bottom: 1em;
+}  
   .tarjeta {
     padding-top: 6em;
     background-color: var(--white);
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    margin: auto;
+    height: 500px;
     border-radius: var(--radio-grande);
     box-shadow: var(--sombra-suave);
     text-align: center;
-    padding: 2em 2.5em 1.5em;
+    padding: 2em 2.5em 2.5em;
     position: relative;
-    overflow: visible;
+  }
+   
+  .contenido-tarjeta {
+    padding-top: 10em;
   }
   
   .imagen-comida {
     position: absolute;
     top: -60px; /* hace que sobresalga */
-    left: 50%;
-    width: 120px;
-    height: 120px;
+    left:calc(65% - 110px);
+    
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: -60px; /* la mitad del ancho (120/2) */
@@ -88,4 +99,4 @@
     cursor: pointer;
     width: 100%;
   }
-  
+ 
