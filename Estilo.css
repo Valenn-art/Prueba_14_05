@@ -43,18 +43,18 @@ main{
   }
   
   .imagen-comida {
-    position: absolute;
-    top: -60px; /* hace que sobresalga */
-    left:calc(65% - 110px);
-    
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: -60px; /* la mitad del ancho (120/2) */
-    box-shadow: var(--sombra-suave);
-    border: 5px solid var(--white);
-    background-color: var(--white);
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+  border: 5px solid var(--white);
+  background-color: var(--white);
+
   }
   
   
@@ -82,13 +82,21 @@ main{
     margin-bottom: 0.6em;
   }
   
-  .precio {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    color: var(--black);
+.precio-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1em;
+ }
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--black);
+  margin: 0;  
   }
-  
+
   .boton-carrito {
     background-color: var(--black);
     color: white;
@@ -100,3 +108,33 @@ main{
     width: 100%;
   }
  
+.barra-superior {
+  position: fixed;
+  top: 1em;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  font-size: 1.8em;
+  color: var(--black);
+  z-index: 10;
+}
+
+
+.cantidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.cantidad button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}

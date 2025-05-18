@@ -1,14 +1,152 @@
 :root {
-    --yellow: #F9D023;
-    --black: #000000;
-    --white: #ffffff;
-    --gray: #555555;
-    --sombra-suave: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    --radio-grande: 2em;
-    --fuente: 'Arial', sans-serif;
-  }
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  --yellow: #F9D023;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #555555;
+  --sombra-suave: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  --radio-grande: 2em;
+  --fuente: 'Arial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--white);
+  margin: 0;
+}
+body, html {
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+
+.titulo-principal {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.buscador {
+  background-color: #f2f2f2;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.buscador input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1em;
+}
+
+.buscador input:focus {
+  outline: none;
+}
+
+.subtitulo {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.distancia {
+  color: orange;
+  margin-left: 0.5em;
+}
+
+.categorias {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+
+.categorias button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.categorias .activo {
+  background-color: var(--yellow);
+}
+
+.lista-comida {
+  display: flex;
+  gap: 1em;
+  overflow-x: auto;
+  margin: 0 -1em;
+  padding: 0 1em 1em; 
+}
+
+
+.item-comida {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: var(--sombra-suave);
+  min-width: 140px;
+  max-width: 160px;
+  flex: 0 0 auto;  
+  text-align: center;
+}
+
+.item-comida img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1em;
+  margin-bottom: 0.5em;
+}
+
+.nombre {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.info {
+  font-size: 0.8em;
+  color: var(--gray);
+  margin-bottom: 0.2em;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.navegacion {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7em 0;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  font-size: 1.3em;
+}
+
+.contenedor {
+  padding: 1em;
+  padding-bottom: 5em;
+}

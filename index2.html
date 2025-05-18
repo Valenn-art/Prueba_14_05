@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comida Cerca</title>
+  <link rel="stylesheet" href="Estilos2.css" />
 </head>
 <body>
-    <section class="Texto">
-        <h1>Encontra buena comida cerca tuyo</h1>
-    </section>
+
+  <header class="header">
+    <span class="logo">🔥</span>
+    <span class="menu">&#9776;</span>
+  </header>
+
+  <section class="contenedor">
+    <h1 class="titulo-principal">Encontrá buena comida cerca tuyo</h>
+
+    <div class="buscador">
+      <span class="icono">&#128269;</span>
+      <input type="text" placeholder="Buscar comida" />
+      <span class="filtro">&#9881;</span>
+    </div>
+
+    <div class="subtitulo">
+      <strong>Encontrados</strong> <span class="distancia">5km</span>
+    </div>
+
+    <div class="categorias">
+      <button class="activo">Ensaladas</button>
+      <button>Comidas Calientes</button>
+      <button>Popular</button>
+    </div>
+
+    <div class="lista-comida">
+      <div class="item-comida">
+        <img src="./imagenes/bocoli-mix.png" alt="Broccoli Mix">
+        <p class="nombre">Broccoli Mix</p>
+        <p class="info">50mins • ⭐ 4.5</p>
+        <p class="precio">$4650.00</p>
+      </div>
+
+      <div class="item-comida">
+        <img src="./imagenes/chiken-veggie.png" alt="Chicken Veggie">
+        <p class="nombre">Chicken Veggie</p>
+        <p class="info">50mins • ⭐ 4.8</p>
+        <p class="precio">$3850.00</p>
+      </div>
+
+      <div class="item-comida">
+        <img src="./imagenes/pepino.png" alt="Cucumber salad">
+        <p class="nombre">Cucumber salad</p>
+        <p class="info">50mins • ⭐ 4.8</p>
+        <p class="precio">$3850.00</p>
+      </div>
+
+         <div class="item-comida">
+        <img src="./imagenes/con-huevo.png" alt="Egg salad">
+        <p class="nombre">Egg salad</p>
+        <p class="info">50mins • ⭐ 4.8</p>
+        <p class="precio">$3850.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="navegacion">
+    <span>🏠</span>
+    <span>🔍</span>
+    <span>❤️</span>
+    <span>🛒</span>
+  </footer>
+
 </body>
 </html>
