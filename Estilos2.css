@@ -21,6 +21,7 @@ body {
 }
 body, html {
   overflow-x: hidden;
+  font-size: 14px;
 }
 
 .header {
@@ -32,14 +33,15 @@ body, html {
 }
 
 .titulo-principal {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 1em;
 }
 
 .buscador {
+  font-size: 0.9em;
   background-color: #f2f2f2;
-  border-radius: 1em;
+  border-radius: 2em;
   padding: 0.5em 1em;
   display: flex;
   align-items: center;
@@ -49,7 +51,7 @@ body, html {
 
 .buscador input {
   border: none;
-  background: transparent;
+  background-color: #f9f9f9;
   flex: 1;
   font-size: 1em;
 }
@@ -59,8 +61,8 @@ body, html {
 }
 
 .subtitulo {
-  font-size: 1em;
-  margin-bottom: 1em;
+  font-size: 0.95em;
+  margin-bottom: 0.8em;
 }
 
 .distancia {
@@ -76,10 +78,11 @@ body, html {
 }
 
 .categorias button {
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
+  font-size: 0.85em;
   border: none;
-  border-radius: 1em;
-  background-color: #eee;
+  border-radius: 2em;
+  background-color: #f2f2f2;
   cursor: pointer;
   font-weight: bold;
 }
@@ -89,23 +92,22 @@ body, html {
 }
 
 .lista-comida {
-  display: flex;
-  gap: 1em;
-  overflow-x: auto;
-  margin: 0 -1em;
-  padding: 0 1em 1em; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.1em;
+  padding-bottom: 0.5em;
 }
 
 
 .item-comida {
   background-color: #fff;
   border-radius: 1em;
-  padding: 1em;
+  padding: 0.7em;
   box-shadow: var(--sombra-suave);
-  min-width: 140px;
-  max-width: 160px;
-  flex: 0 0 auto;  
+  min-width: 130px;
+  max-width: 140px; 
   text-align: center;
+  font-size: 0.9em;
 }
 
 .item-comida img {
@@ -128,25 +130,25 @@ body, html {
 
 .precio {
   font-weight: bold;
+  font-size: 0.95em;
 }
 
 .navegacion {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 1.5em;
+  left: 1em;
+  right: 1em;
   background-color: var(--black);
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.7em 0;
-  border-top-left-radius: 1.5em;
-  border-top-right-radius: 1.5em;
-  font-size: 1.3em;
+  padding: 0.5em 0;
+  border-radius: 2em;
+  font-size: 1.4em;
 }
 
 .contenedor {
   padding: 1em;
-  padding-bottom: 5em;
+  padding-bottom: 8em;
 }
